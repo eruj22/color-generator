@@ -1,0 +1,91 @@
+.main {
+  background-color: #e8ebf3;
+  color: #222;
+  text-align: center;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.generate-btn {
+  margin: 3rem 0 0;
+  background-color: #7f6ac9;
+  color: white;
+  padding: 1rem 8rem;
+  border-radius: 4px;
+}
+
+.copy {
+  background-color: white;
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+  margin-top: 5rem;
+  width: fit-content;
+
+  p {
+    margin: 0;
+  }
+}
+
+.palette {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  &__card {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    cursor: pointer;
+
+    &-color {
+      // background-color: aliceblue;
+      width: 120px;
+      height: 160px;
+      border-radius: 5px;
+    }
+
+    span {
+      display: inline-block;
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .palette {
+    flex-direction: column;
+    &__card {
+      position: relative;
+      &-color {
+        width: 100%;
+        height: 100px;
+      }
+
+      span {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        transform: rotate(-90deg);
+        background-color: #fff;
+        padding: 0.5rem;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .generate-btn {
+    padding: 1rem 2rem;
+  }
+}
