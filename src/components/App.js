@@ -27,6 +27,9 @@ function App() {
   useEffect(() => {
     getData((err, data) => {
       setPalette(data);
+      if (err) {
+        console.log(err);
+      }
     });
   }, [click]);
 
@@ -38,15 +41,13 @@ function App() {
     <main className="main">
       <div className="container">
         <h1>Color palette generator</h1>
-        <Palette palette={palette} />
+        <Palette palette={palette} handleClick={handleClick} />
         <button className="generate-btn" onClick={handleClick}>
           Generate palette
         </button>
         <p>Or just press the "Spacebar" to generate new palettes</p>
         <div className="copy">
-          <p>
-            Click to copy individual color &middot; Press "C" to copy palette
-          </p>
+          Click to copy individual color &middot; Press "C" to copy palette
         </div>
       </div>
     </main>
