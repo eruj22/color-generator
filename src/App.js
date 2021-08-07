@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Palette from "./Palette";
-import "../style/style.scss";
+import Palette from "./components/Palette/Palette";
+import "./style/main.scss";
+import Button from "./components/Button";
 
 function App() {
   const [palette, setPalette] = useState([]);
@@ -42,9 +43,14 @@ function App() {
       <div className="container">
         <h1>Color palette generator</h1>
         <Palette palette={palette} handleClick={handleClick} />
-        <button className="generate-btn" onClick={handleClick}>
+        {/* <button className="generate-btn" onClick={handleClick}>
           Generate palette
-        </button>
+        </button> */}
+        <Button
+          handleClick={handleClick}
+          styleButton={"generate-btn"}
+          text={"Generate palette"}
+        />
         <p>Or just press the "Spacebar" to generate new palettes</p>
         <div className="copy">
           Click to copy individual color &middot; Press "C" to copy palette
