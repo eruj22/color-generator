@@ -43,16 +43,13 @@ function App() {
       <div className="container">
         <h1>Color palette generator</h1>
         <Palette palette={palette} handleClick={handleClick} />
-        {/* <button className="generate-btn" onClick={handleClick}>
-          Generate palette
-        </button> */}
         <Button
           handleClick={handleClick}
-          styleButton={"generate-btn"}
+          styleButton={"btn btn--blue"}
           text={"Generate palette"}
         />
         <p>Or just press the "Spacebar" to generate new palettes</p>
-        <div className="copy">
+        <div className="attention attention--bottom">
           Click to copy individual color &middot; Press "C" to copy palette
         </div>
       </div>

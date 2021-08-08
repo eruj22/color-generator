@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MessageCopy from "../MessageCopy";
 import useEventListener from "../../hooks/useEventListener";
 import { SPACE_KEYS, C_KEYS } from "../../utils/constants";
-import { decToHex, rgbToHex, copyToClipboard } from "../../utils/helpers";
+import { rgbToHex, copyToClipboard } from "../../utils/helpers";
 import PaletteCard from "./PaletteCard";
 
 const Palette = ({ palette, handleClick }) => {

@@ -1,5 +1,4 @@
-.copy {
-  background-color: $clr-white;
+.attention {
   border-radius: 1rem;
   margin: 0 auto;
   padding: 0.5rem;
@@ -7,16 +6,16 @@
   width: fit-content;
 }
 
-.sign-top {
+.attention--bottom {
+  background-color: $clr-white;
+}
+
+.attention--top {
   position: absolute;
   color: rgb(154, 136, 167);
   background-color: rgb(26, 26, 26);
   top: -40px;
   left: calc(50% - 180px);
-  border-radius: 1rem;
-  padding: 0.5rem 1rem;
-  margin-top: 5rem;
-  width: fit-content;
 
   span {
     color: $clr-white;
