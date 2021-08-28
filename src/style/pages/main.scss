@@ -13,3 +13,10 @@
   margin: 0 auto;
   padding: 5rem 0;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
