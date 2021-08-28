@@ -22,6 +22,8 @@
 
 <!-- ABOUT THE PROJECT -->
 
+![Posnetek zaslona 2021-08-28 152625](https://user-images.githubusercontent.com/80893722/131220261-694a4343-46b4-4ff5-90bf-4c4cd426e6f0.png)
+
 ## About The Project
 
 This is simple project that displays color palette. You can generate random color palettes for your next project, copy color or whole palette on click or specific key click. Data for color is fetched from API <a href="http://colormind.io/api/">Color Mind</a>.
