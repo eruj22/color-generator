@@ -36,6 +36,7 @@ function App() {
         console.log(err)
       }
     })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [click])
 
   if (isLoading) {
